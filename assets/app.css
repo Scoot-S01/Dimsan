@@ -1,0 +1,102 @@
+/** @format */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Menggunakan min-height untuk memastikan tinggi mencakup seluruh tinggi halaman */
+  overflow: hidden;
+  background-color: #f2f2f2; /* Menambahkan warna latar belakang */
+}
+
+.block {
+  width: 100%;
+  max-width: 20rem;
+  height: auto; /* Mengubah tinggi menjadi sesuai dengan konten */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 20px;
+}
+.perkenalan {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  text-align: center; /* Mengatur tata letak teks/video di tengah */
+}
+
+.foto video {
+  width: 120px;
+  height: 120px;
+  object-fit: cover; /* Untuk menjaga aspek rasio video */
+  border-radius: 50%; /* Untuk membuat video menjadi lingkaran */
+}
+
+.linkcontent {
+  margin: 20px 10px;
+  text-align: center;
+}
+.icon {
+  display: grid;
+  justify-content: center;
+}
+
+.icon button {
+  display: flex;
+  max-height: 3rem;
+  width: 15rem;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.icon button:hover {
+  background: rgba(165, 167, 167, 0.137);
+}
+
+.icon button i {
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  /* display: flex; */
+}
+.icon button p {
+  padding-top: 0.5rem;
+  /* display: flex; */
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon a {
+  text-decoration: none;
+}
+
+.typing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 10rem;
+  max-width: 10rem;
+  /* width: 20rem ; */
+  margin-top: 0.5rem;
+}
