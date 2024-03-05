@@ -1,5 +1,5 @@
 /** @format */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 html,
 body {
   height: 100%;
@@ -11,16 +11,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Menggunakan min-height untuk memastikan tinggi mencakup seluruh tinggi halaman */
+  min-height: 100vh;
   overflow: hidden;
-  background-color: #f2f2f2; /* Menambahkan warna latar belakang */
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=1d2753&c2=10192a&gt=l&gd=dtt
+*/
+  /* background: #1d2753;
+  background: linear-gradient(180deg, #1d2753, #10192a); */
 }
 
 .block {
-  width: 100%;
-  max-width: 20rem;
-  height: auto; /* Mengubah tinggi menjadi sesuai dengan konten */
-  /* From https://css.glass */
+  /* width: 100%;
+  min-height: 20rem;
+  max-width: 25rem; */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+  text-align: center;
+  width: 25rem;
+  height: 37.5rem;
+  color: black;
   background: rgba(255, 255, 255, 0.16);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -58,15 +72,15 @@ body {
 
 .icon button {
   display: flex;
-  max-height: 3rem;
-  width: 15rem;
+  height: 3rem;
+  width: 20rem;
   margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.16);
+  background: transparent;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.3px);
+  /* backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
-  border: 1px solid rgba(255, 255, 255, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.36); */
 }
 
 .icon button:hover {
@@ -79,6 +93,7 @@ body {
   /* display: flex; */
 }
 .icon button p {
+  font-size: 1rem;
   padding-top: 0.5rem;
   /* display: flex; */
   margin: 0 auto;
@@ -99,4 +114,64 @@ body {
   max-width: 10rem;
   /* width: 20rem ; */
   margin-top: 0.5rem;
+}
+
+.ig p {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  -webkit-background-clip: text; /* Untuk browser berbasis WebKit seperti Chrome dan Safari */
+  color: transparent; /* Mengubah warna teks ikon menjadi transparan */
+}
+.lk p {
+  color: #0a66c2;
+}
+.fb p{
+  color: #3b5998;
+}
+.code p{
+  color: #047857;
+}
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  -webkit-background-clip: text;
+  color: transparent; /* Mengubah warna teks ikon menjadi transparan */
+}
+.fa-linkedin {
+  color: #0a66c2;
+}
+.fa-codepen{
+  color: #047857;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+
+@media (max-width: 424px) {
+  .block {
+    width: 100%; /* responsive width */
+    height: auto; /* responsive height */
+    max-width: 22.5rem; /* responsive max width */
+    min-height: 15rem; /* responsive min height */
+    height: auto; /* responsive height */
+    font-size: small;
+  }
+  .foto video {
+    width: 100px;
+    height: 100px;
+  }
 }
