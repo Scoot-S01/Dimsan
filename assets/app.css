@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   /*
 * Created with https://www.css-gradient.com
@@ -46,7 +46,7 @@ body {
   font-variation-settings: "slnt" 0;
   text-align: center;
   width: 25rem;
-  height: 37.5rem;
+  
   color: black;
   background: rgba(255, 255, 255, 0.16);
   border-radius: 16px;
