@@ -1,5 +1,5 @@
 /** @format */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 html,
 body {
   height: 100%;
@@ -21,6 +21,20 @@ body {
   background: linear-gradient(180deg, #1d2753, #10192a); */
 }
 
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/Py.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
 .block {
   /* width: 100%;
   min-height: 20rem;
@@ -29,8 +43,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
   text-align: center;
   width: 25rem;
   height: 37.5rem;
@@ -38,8 +51,8 @@ body {
   background: rgba(255, 255, 255, 0.16);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.3px);
-  -webkit-backdrop-filter: blur(3.3px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.36);
   border-radius: 20px;
 }
@@ -64,6 +77,11 @@ body {
 .linkcontent {
   margin: 20px 10px;
   text-align: center;
+}
+
+.linkcontent p{
+  font-size: 18px;
+  font-weight: 600;
 }
 .icon {
   display: grid;
@@ -132,10 +150,10 @@ body {
 .lk p {
   color: #0a66c2;
 }
-.fb p{
+.fb p {
   color: #3b5998;
 }
-.code p{
+.code p {
   color: #047857;
 }
 .fa-instagram {
@@ -154,10 +172,10 @@ body {
 .fa-linkedin {
   color: #0a66c2;
 }
-.fa-codepen{
+.fa-codepen {
   color: #047857;
 }
-.fa-facebook{
+.fa-facebook {
   color: #3b5998;
 }
 
