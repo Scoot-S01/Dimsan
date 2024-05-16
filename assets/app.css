@@ -1,5 +1,6 @@
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 html,
 body {
   height: 100%;
@@ -13,12 +14,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=1d2753&c2=10192a&gt=l&gd=dtt
-*/
-  /* background: #1d2753;
-  background: linear-gradient(180deg, #1d2753, #10192a); */
+  background-color: white;
 }
 
 .container::before {
@@ -36,9 +32,6 @@ body {
 }
 
 .block {
-  /* width: 100%;
-  min-height: 20rem;
-  max-width: 25rem; */
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -46,16 +39,17 @@ body {
   font-variation-settings: "slnt" 0;
   text-align: center;
   width: 25rem;
-  
-  color: black;
-  background: rgba(255, 255, 255, 0.16);
+  color: white;
+  background: rgba(26, 77, 46, 0.92);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.36);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(26, 77, 46, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
 }
+
 .perkenalan {
   margin-top: 2rem;
   display: flex;
@@ -64,25 +58,27 @@ body {
 }
 
 .foto {
-  text-align: center; /* Mengatur tata letak teks/video di tengah */
-}
-
-.foto video {
+  text-align: center;
   width: 120px;
   height: 120px;
-  object-fit: cover; /* Untuk menjaga aspek rasio video */
-  border-radius: 50%; /* Untuk membuat video menjadi lingkaran */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.5rem solid white;
 }
 
 .linkcontent {
+  
   margin: 20px 10px;
   text-align: center;
 }
 
-.linkcontent p{
+.linkcontent p {
   font-size: 18px;
   font-weight: 600;
+  /* margin-bottom: 15px; */
+  padding-bottom: 15px;
 }
+
 .icon {
   display: grid;
   justify-content: center;
@@ -92,28 +88,25 @@ body {
   display: flex;
   height: 3rem;
   width: 20rem;
-  margin-bottom: 10px;
-  background: transparent;
+  margin-bottom: 20px;
+  background: white;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  /* backdrop-filter: blur(3.3px);
-  -webkit-backdrop-filter: blur(3.3px);
-  border: 1px solid rgba(255, 255, 255, 0.36); */
 }
 
 .icon button:hover {
-  background: rgba(165, 167, 167, 0.137);
+  background: #DDDDDD;
+  /* color: white; */
 }
 
 .icon button i {
   font-size: 1.5rem;
   margin-top: 0.3rem;
-  /* display: flex; */
 }
+
 .icon button p {
   font-size: 1rem;
   padding-top: 0.5rem;
-  /* display: flex; */
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -128,53 +121,50 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 10rem;
-  max-width: 10rem;
-  /* width: 20rem ; */
+  width: 8rem;
+  max-width: 8rem;
   margin-top: 0.5rem;
 }
 
 .ig p {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
-  -webkit-background-clip: text; /* Untuk browser berbasis WebKit seperti Chrome dan Safari */
-  color: transparent; /* Mengubah warna teks ikon menjadi transparan */
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
+.icon button:hover + .ig p {
+  color: white;
+}
+
+.ig :hover {
+  background: white;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .lk p {
-  color: #0a66c2;
+  color: #1A4D2E;
 }
-.fb p {
-  color: #3b5998;
-}
+
+
 .code p {
   color: #047857;
 }
+
 .fa-instagram {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
   -webkit-background-clip: text;
-  color: transparent; /* Mengubah warna teks ikon menjadi transparan */
+  color: transparent;
 }
+
 .fa-linkedin {
   color: #0a66c2;
 }
+
 .fa-codepen {
   color: #047857;
 }
+
 .fa-facebook {
   color: #3b5998;
 }

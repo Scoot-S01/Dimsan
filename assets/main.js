@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const typedTextSpan = document.querySelector(".typing h1"); // Menggunakan class untuk elemen <h1>
-  const textArray = ["Putu Adelio", "Developer", "16 year old"];
+  const textArray = ["Hidroponik", "Lele", "Pole"];
   let textArrayIndex = 0;
   let charIndex = 0;
 
