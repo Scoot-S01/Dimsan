@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const typedTextSpan = document.querySelector(".typing h1"); // Menggunakan class untuk elemen <h1>
-  const textArray = ["Hidroponik", "Lele", "Pole"];
+  const textArray = ["Kelompok 3", "Dimsan"];
   let textArrayIndex = 0;
   let charIndex = 0;
 
@@ -31,5 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  setTimeout(type, 1000);
+  setTimeout(type, 2000);
 });
